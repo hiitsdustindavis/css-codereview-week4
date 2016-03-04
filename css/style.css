@@ -9,7 +9,7 @@
 
 .wrapper {
   margin: 0 auto;
-  width: 74vw; }
+  width: 66.75rem; }
 
 .hero {
   width: 100vw;
@@ -17,28 +17,33 @@
   background-image: url("../img/hero-slide1.jpg");
   background-size: cover;
   position: relative;
-  padding: 6rem 0 0 0; }
+  padding: 5rem 0 0 0; }
   .hero .wrapper {
     display: flex;
+    align-items: center;
     justify-content: space-between; }
-    .hero .wrapper .logo {
-      margin: 0 2rem; }
     .hero .wrapper .nav-main ul {
       color: white; }
       .hero .wrapper .nav-main ul li {
         display: inline-block;
-        margin: 0 0.8rem 0 0.8rem; }
-
-@font-face {
-  font-family: "Din";
-  src: url("../font/DIN Condensed Bold.ttf"); }
-li {
-  list-style: none; }
+        margin: 0 0 0 1.4rem; }
 
 .din-uppercase, .hero .wrapper .nav-main ul li {
   font-family: "din";
   text-transform: uppercase;
   letter-spacing: 0.13rem;
   font-size: 1.1rem; }
+
+.hover-orange:hover, .hero .wrapper .nav-main ul li a:hover {
+  color: #DC7725; }
+
+.test-border {
+  border: 1px solid chartreuse; }
+
+@font-face {
+  font-family: "Din";
+  src: url("../font/DIN Condensed Bold.ttf"); }
+li {
+  list-style: none; }
 
 /*# sourceMappingURL=style.css.map */

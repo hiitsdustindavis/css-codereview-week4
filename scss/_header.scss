@@ -4,20 +4,26 @@
   background-image: url("../img/hero-slide1.jpg");
   background-size: cover;
   position: relative;
-  padding: 6rem 0 0 0;
+  padding: 5rem 0 0 0;
   .wrapper {
-    // border: 2px solid chartreuse;
+    // @extend .test-border;
     display: flex;
-    justify-content: space-between;;
+    align-items: center;
+    justify-content: space-between;
     .logo {
-      margin: 0 2rem;
+      // @extend .test-border;
+      // margin: 0 9.8rem 0 0;
     }
     .nav-main ul {
+      // @extend .test-border;
       color: white;
       li {
         display: inline-block;
         @extend .din-uppercase;
-        margin: 0 0.8rem 0 0.8rem;
+        margin: 0 0 0 1.4rem;
+        a {
+          @extend .hover-orange;
+        }
       }
     }
   }

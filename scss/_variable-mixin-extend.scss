@@ -1,5 +1,6 @@
 // VARIABLES!
   $text-main: 1.1rem;
+  $color-orange: #DC7725;
 
 // EXTENDS!
   .din-uppercase {
@@ -7,5 +8,15 @@
     text-transform: uppercase;
     letter-spacing: 0.13rem;
     font-size: $text-main;
+  }
+
+  .hover-orange {
+    &:hover {
+      color: $color-orange;
+    }
+  }
+
+  .test-border {
+    border: 1px solid chartreuse;
   }
 // MIXINS!
