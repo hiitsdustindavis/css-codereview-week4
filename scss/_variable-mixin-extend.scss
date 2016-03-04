@@ -1,0 +1,11 @@
+// VARIABLES!
+  $text-main: 1.1rem;
+
+// EXTENDS!
+  .din-uppercase {
+    font-family: "din";
+    text-transform: uppercase;
+    letter-spacing: 0.13rem;
+    font-size: $text-main;
+  }
+// MIXINS!

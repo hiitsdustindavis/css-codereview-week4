@@ -1,3 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-decoration: none; }
 
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+.wrapper {
+  margin: 0 auto;
+  width: 74vw; }
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/hero-slide1.jpg");
+  background-size: cover;
+  position: relative;
+  padding: 6rem 0 0 0; }
+  .hero .wrapper {
+    display: flex;
+    justify-content: space-between; }
+    .hero .wrapper .logo {
+      margin: 0 2rem; }
+    .hero .wrapper .nav-main ul {
+      color: white; }
+      .hero .wrapper .nav-main ul li {
+        display: inline-block;
+        margin: 0 0.8rem 0 0.8rem; }
+
+@font-face {
+  font-family: "Din";
+  src: url("../font/DIN Condensed Bold.ttf"); }
+li {
+  list-style: none; }
+
+.din-uppercase, .hero .wrapper .nav-main ul li {
+  font-family: "din";
+  text-transform: uppercase;
+  letter-spacing: 0.13rem;
+  font-size: 1.1rem; }
 
 /*# sourceMappingURL=style.css.map */

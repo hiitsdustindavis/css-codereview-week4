@@ -1,0 +1,24 @@
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/hero-slide1.jpg");
+  background-size: cover;
+  position: relative;
+  padding: 6rem 0 0 0;
+  .wrapper {
+    // border: 2px solid chartreuse;
+    display: flex;
+    justify-content: space-between;;
+    .logo {
+      margin: 0 2rem;
+    }
+    .nav-main ul {
+      color: white;
+      li {
+        display: inline-block;
+        @extend .din-uppercase;
+        margin: 0 0.8rem 0 0.8rem;
+      }
+    }
+  }
+}
