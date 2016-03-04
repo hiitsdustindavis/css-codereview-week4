@@ -5,26 +5,84 @@
   background-size: cover;
   position: relative;
   padding: 5rem 0 0 0;
-  .wrapper {
-    // @extend .test-border;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    .logo {
-      // @extend .test-border;
-      // margin: 0 9.8rem 0 0;
-    }
-    .nav-main ul {
-      // @extend .test-border;
-      color: white;
-      li {
-        display: inline-block;
-        @extend .din-uppercase;
-        margin: 0 0 0 1.4rem;
-        a {
-          @extend .hover-orange;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  // .wrapper {
+    .row-between {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        // @extend .test-border;
+        // margin: 0 9.8rem 0 0;
+      }
+      .nav-main ul {
+        // @extend .test-border;
+        color: white;
+        li {
+          display: inline-block;
+          @extend .din-uppercase;
+          font-size: $text-main;
+          margin: 0 0 0 1.4rem;
+          a {
+            @extend .hover-orange;
+          }
         }
       }
     }
-  }
+    .header-lockup {
+      margin: 11rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      span {
+        margin: 1rem 0 0 0;
+        @extend .din-uppercase;
+        font-size: $text-main + .35;
+        letter-spacing: 0.35rem;
+      }
+      h1 {
+        font-size: 7rem;
+        letter-spacing: 0.2rem;
+      }
+      hr {
+        margin: 1rem;
+        border: none;
+        background-color: white;
+        height: 0.3rem;
+        width: 16rem;
+      }
+    }
+    .scroll-down-bubble {
+      #talk-bubble {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 170px;
+        height: 62px;
+        background: $color-orange;
+        position: relative;
+        -moz-border-radius:    10px;
+        -webkit-border-radius: 10px;
+        border-radius:         5px;
+      }
+      #talk-bubble:before {
+        content:"";
+        position: absolute;
+        right: 46%;
+        bottom: -1rem;
+        width: 0;
+        height: 0;
+        border-top: 13px solid transparent;
+        border-right: 13px solid $color-orange;
+        border-bottom: 13px solid transparent;
+        transform: rotate(-90deg);
+      }
+      span {
+        @extend .din-uppercase;
+      }
+    }
+  // }
 }

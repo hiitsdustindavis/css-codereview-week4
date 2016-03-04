@@ -1,3 +1,15 @@
+.din-uppercase, .hero .row-between .nav-main ul li, .hero .header-lockup span, .hero .scroll-down-bubble span {
+  font-family: "din";
+  text-transform: uppercase;
+  letter-spacing: 0.13rem;
+  font-size: 1.1rem; }
+
+.hover-orange:hover, .hero .row-between .nav-main ul li a:hover {
+  color: #DC7725; }
+
+.test-border {
+  border: 1px solid chartreuse; }
+
 * {
   padding: 0;
   margin: 0;
@@ -17,28 +29,61 @@
   background-image: url("../img/hero-slide1.jpg");
   background-size: cover;
   position: relative;
-  padding: 5rem 0 0 0; }
-  .hero .wrapper {
+  padding: 5rem 0 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .hero .row-between {
     display: flex;
     align-items: center;
     justify-content: space-between; }
-    .hero .wrapper .nav-main ul {
+    .hero .row-between .nav-main ul {
       color: white; }
-      .hero .wrapper .nav-main ul li {
+      .hero .row-between .nav-main ul li {
         display: inline-block;
+        font-size: 1.1rem;
         margin: 0 0 0 1.4rem; }
-
-.din-uppercase, .hero .wrapper .nav-main ul li {
-  font-family: "din";
-  text-transform: uppercase;
-  letter-spacing: 0.13rem;
-  font-size: 1.1rem; }
-
-.hover-orange:hover, .hero .wrapper .nav-main ul li a:hover {
-  color: #DC7725; }
-
-.test-border {
-  border: 1px solid chartreuse; }
+  .hero .header-lockup {
+    margin: 11rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; }
+    .hero .header-lockup span {
+      margin: 1rem 0 0 0;
+      font-size: 1.45rem;
+      letter-spacing: 0.35rem; }
+    .hero .header-lockup h1 {
+      font-size: 7rem;
+      letter-spacing: 0.2rem; }
+    .hero .header-lockup hr {
+      margin: 1rem;
+      border: none;
+      background-color: white;
+      height: 0.3rem;
+      width: 16rem; }
+  .hero .scroll-down-bubble #talk-bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 62px;
+    background: #DC7725;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 5px; }
+  .hero .scroll-down-bubble #talk-bubble:before {
+    content: "";
+    position: absolute;
+    right: 46%;
+    bottom: -1rem;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 13px solid #DC7725;
+    border-bottom: 13px solid transparent;
+    transform: rotate(-90deg); }
 
 @font-face {
   font-family: "Din";
