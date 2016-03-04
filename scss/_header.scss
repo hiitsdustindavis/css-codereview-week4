@@ -8,81 +8,107 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  // .wrapper {
-    .row-between {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      .logo {
-        // @extend .test-border;
-        // margin: 0 9.8rem 0 0;
+  @extend .row-between;
+  .nav-main ul {
+    display: flex;
+    color: white;
+    @extend .din-uppercase;
+    li {
+      padding: 0.8rem 0.8rem;
+      font-size: $font-size-main;
+      @extend .hover-orange;
+      &:nth-child(n+2):nth-child(-n+5):hover{
+        background-color: $color-dark-gray;
+        border-radius: 4px 4px 0 0;
+        .drop-down-menu ul{
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+        }
       }
-      .nav-main ul {
-        // @extend .test-border;
-        color: white;
+      .drop-down-menu ul{
+        width: 16rem;
+        display: none;
+        background-color: $color-dark-gray;
+        padding: 0;
+        margin: 0 0 0 -0.8rem;
         li {
-          display: inline-block;
-          @extend .din-uppercase;
-          font-size: $text-main;
-          margin: 0 0 0 1.4rem;
+          margin: 0.15rem 0 0.5rem 0;
+          padding: 0.8rem 0.5rem 0.5rem 0.8rem;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: lighter;
+          letter-spacing: 0.04rem;
+          text-transform: none;
+          font-size: 1rem;
           a {
-            @extend .hover-orange;
+            color: grey;
           }
+          &:hover {
+            a {
+              color: white;
+            }
+          }
+        }
+        hr {
+          border: none;
+          height: 1px;
+          background-color: grey;
         }
       }
     }
-    .header-lockup {
-      margin: 11rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-direction: column;
-      span {
-        margin: 1rem 0 0 0;
-        @extend .din-uppercase;
-        font-size: $text-main + .35;
-        letter-spacing: 0.35rem;
-      }
-      h1 {
-        font-size: 7rem;
-        letter-spacing: 0.2rem;
-      }
-      hr {
-        margin: 1rem;
-        border: none;
-        background-color: white;
-        height: 0.3rem;
-        width: 16rem;
-      }
-    }
-    .scroll-down-bubble {
-      #talk-bubble {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 170px;
-        height: 62px;
-        background: $color-orange;
-        position: relative;
-        -moz-border-radius:    10px;
-        -webkit-border-radius: 10px;
-        border-radius:         5px;
-      }
-      #talk-bubble:before {
-        content:"";
-        position: absolute;
-        right: 46%;
-        bottom: -1rem;
-        width: 0;
-        height: 0;
-        border-top: 13px solid transparent;
-        border-right: 13px solid $color-orange;
-        border-bottom: 13px solid transparent;
-        transform: rotate(-90deg);
-      }
-      span {
-        @extend .din-uppercase;
-      }
-    }
-  // }
+  }
+}
+.header-lockup {
+  margin: 14vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  span {
+    margin: 1rem 0 0 0;
+    @extend .din-uppercase;
+    font-size: $font-size-main + .35;
+    letter-spacing: 0.35rem;
+  }
+  h1 {
+    font-size: 7rem;
+    letter-spacing: 0.2rem;
+  }
+  hr {
+    margin: 1rem;
+    border: none;
+    background-color: white;
+    height: 0.3rem;
+    width: 16rem;
+  }
+}
+.scroll-down-bubble {
+  margin: 24vh 0 10vh 0;
+  #talk-bubble {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 62px;
+    background: $color-orange;
+    position: relative;
+    -moz-border-radius:    10px;
+    -webkit-border-radius: 10px;
+    border-radius:         5px;
+  }
+  #talk-bubble:before {
+    content:"";
+    position: absolute;
+    right: 46%;
+    bottom: -1rem;
+    width: 0;
+    height: 0;
+    border-top: 13px solid transparent;
+    border-right: 13px solid $color-orange;
+    border-bottom: 13px solid transparent;
+    transform: rotate(-90deg);
+  }
+  span {
+    @extend .din-uppercase;
+  }
 }

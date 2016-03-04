@@ -1,11 +1,16 @@
-.din-uppercase, .hero .row-between .nav-main ul li, .hero .header-lockup span, .hero .scroll-down-bubble span {
+.din-uppercase, .hero .nav-main ul, .header-lockup span, .scroll-down-bubble span {
   font-family: "din";
   text-transform: uppercase;
   letter-spacing: 0.13rem;
   font-size: 1.1rem; }
 
-.hover-orange:hover, .hero .row-between .nav-main ul li a:hover {
+.hover-orange:hover, .hero .nav-main ul li:hover {
   color: #DC7725; }
+
+.row-between, .hero {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between; }
 
 .test-border {
   border: 1px solid chartreuse; }
@@ -33,36 +38,65 @@
   display: flex;
   align-items: center;
   flex-direction: column; }
-  .hero .row-between {
+  .hero .nav-main ul {
     display: flex;
-    align-items: center;
-    justify-content: space-between; }
-    .hero .row-between .nav-main ul {
-      color: white; }
-      .hero .row-between .nav-main ul li {
-        display: inline-block;
-        font-size: 1.1rem;
-        margin: 0 0 0 1.4rem; }
-  .hero .header-lockup {
-    margin: 11rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column; }
-    .hero .header-lockup span {
-      margin: 1rem 0 0 0;
-      font-size: 1.45rem;
-      letter-spacing: 0.35rem; }
-    .hero .header-lockup h1 {
-      font-size: 7rem;
-      letter-spacing: 0.2rem; }
-    .hero .header-lockup hr {
-      margin: 1rem;
-      border: none;
-      background-color: white;
-      height: 0.3rem;
-      width: 16rem; }
-  .hero .scroll-down-bubble #talk-bubble {
+    color: white; }
+    .hero .nav-main ul li {
+      padding: 0.8rem 0.8rem;
+      font-size: 1.1rem; }
+      .hero .nav-main ul li:nth-child(n+2):nth-child(-n+5):hover {
+        background-color: #343433;
+        border-radius: 4px 4px 0 0; }
+        .hero .nav-main ul li:nth-child(n+2):nth-child(-n+5):hover .drop-down-menu ul {
+          position: absolute;
+          display: flex;
+          flex-direction: column; }
+      .hero .nav-main ul li .drop-down-menu ul {
+        width: 16rem;
+        display: none;
+        background-color: #343433;
+        padding: 0;
+        margin: 0 0 0 -0.8rem; }
+        .hero .nav-main ul li .drop-down-menu ul li {
+          margin: 0.15rem 0 0.5rem 0;
+          padding: 0.8rem 0.5rem 0.5rem 0.8rem;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: lighter;
+          letter-spacing: 0.04rem;
+          text-transform: none;
+          font-size: 1rem; }
+          .hero .nav-main ul li .drop-down-menu ul li a {
+            color: grey; }
+          .hero .nav-main ul li .drop-down-menu ul li:hover a {
+            color: white; }
+        .hero .nav-main ul li .drop-down-menu ul hr {
+          border: none;
+          height: 1px;
+          background-color: grey; }
+
+.header-lockup {
+  margin: 14vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column; }
+  .header-lockup span {
+    margin: 1rem 0 0 0;
+    font-size: 1.45rem;
+    letter-spacing: 0.35rem; }
+  .header-lockup h1 {
+    font-size: 7rem;
+    letter-spacing: 0.2rem; }
+  .header-lockup hr {
+    margin: 1rem;
+    border: none;
+    background-color: white;
+    height: 0.3rem;
+    width: 16rem; }
+
+.scroll-down-bubble {
+  margin: 24vh 0 10vh 0; }
+  .scroll-down-bubble #talk-bubble {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,7 +107,7 @@
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     border-radius: 5px; }
-  .hero .scroll-down-bubble #talk-bubble:before {
+  .scroll-down-bubble #talk-bubble:before {
     content: "";
     position: absolute;
     right: 46%;

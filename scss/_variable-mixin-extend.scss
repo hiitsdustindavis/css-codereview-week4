@@ -1,19 +1,25 @@
 // VARIABLES!
-  $text-main: 1.1rem;
+  $font-size-main: 1.1rem;
   $color-orange: #DC7725;
-
+  $color-dark-gray: #343433;
 // EXTENDS!
   .din-uppercase {
     font-family: "din";
     text-transform: uppercase;
     letter-spacing: 0.13rem;
-    font-size: $text-main;
+    font-size: $font-size-main;
   }
 
   .hover-orange {
     &:hover {
       color: $color-orange;
     }
+  }
+
+  .row-between {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
   }
 
   .test-border {
