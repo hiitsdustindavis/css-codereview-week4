@@ -22,6 +22,18 @@
     justify-content: space-between;
   }
 
+  .center-horiz-vert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .label-stroke {
+    height: 0.35rem;
+    width: 2.5rem;
+    background-color: $color-orange;
+  }
+
   .test-border {
     border: 1px solid chartreuse;
   }

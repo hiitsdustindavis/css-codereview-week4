@@ -1,4 +1,4 @@
-.din-uppercase, .hero .nav-main ul, .header-lockup span, .scroll-down-bubble span {
+.din-uppercase, .hero .nav-main ul, .header-lockup span, .scroll-down-bubble span, .gallery-lockup .label-gallery {
   font-family: "din";
   text-transform: uppercase;
   letter-spacing: 0.13rem;
@@ -11,6 +11,16 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between; }
+
+.center-horiz-vert, .gallery-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.label-stroke, .gallery-lockup span {
+  height: 0.35rem;
+  width: 2.5rem;
+  background-color: #DC7725; }
 
 .test-border {
   border: 1px solid chartreuse; }
@@ -88,10 +98,9 @@
     font-size: 7rem;
     letter-spacing: 0.2rem; }
   .header-lockup hr {
-    margin: 1rem;
     border: none;
     background-color: white;
-    height: 0.3rem;
+    height: 4px;
     width: 16rem; }
 
 .scroll-down-bubble {
@@ -124,5 +133,47 @@
   src: url("../font/DIN Condensed Bold.ttf"); }
 li {
   list-style: none; }
+
+.gallery-icon {
+  margin: 0 auto;
+  align-self: center;
+  width: 6rem;
+  height: 6rem;
+  background-color: rgba(52, 52, 51, 0.75);
+  border-radius: 100%; }
+  .gallery-icon img {
+    height: 3rem; }
+
+.gallery-lockup span {
+  position: absolute;
+  left: 2.8rem;
+  bottom: 5.3rem; }
+.gallery-lockup .label-gallery {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 2.8rem;
+  bottom: 2.5rem; }
+
+.gallery .row1 {
+  display: flex; }
+  .gallery .row1 .col-half {
+    display: flex;
+    background-image: url("../img/home-raft.jpg");
+    background-size: cover;
+    width: 50vw;
+    height: 26.25rem;
+    position: relative; }
+  .gallery .row1 .col-quarter {
+    display: flex;
+    background-image: url("../img/home-basecamp.jpg");
+    background-size: cover;
+    width: 25vw;
+    height: 26.25rem; }
+    .gallery .row1 .col-quarter:last-of-type {
+      display: flex;
+      background-image: url("../img/home-backpacking.jpg");
+      background-size: cover;
+      width: 25vw;
+      height: 26.25rem; }
 
 /*# sourceMappingURL=style.css.map */
