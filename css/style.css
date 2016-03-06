@@ -9,7 +9,7 @@
 
 .row-between, .hero {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between; }
 
 .center-horiz-vert, .gallery-icon {
@@ -36,7 +36,12 @@
 
 .wrapper {
   margin: 0 auto;
-  width: 66.75rem; }
+  width: 67rem; }
+  @media screen and (max-width: 67rem) {
+    .wrapper {
+      width: 56rem; }
+      .wrapper .nav-main li a {
+        font-size: 1rem; } }
 
 .hero {
   width: 100vw;
@@ -140,19 +145,25 @@ li {
   width: 6rem;
   height: 6rem;
   background-color: rgba(52, 52, 51, 0.75);
-  border-radius: 100%; }
+  border-radius: 100%;
+  transition: 200ms ease; }
   .gallery-icon img {
     height: 3rem; }
 
-.gallery-lockup span {
-  position: absolute;
+.gallery-lockup {
   left: 2.8rem;
-  bottom: 5.3rem; }
-.gallery-lockup .label-gallery {
-  font-size: 1.5rem;
+  bottom: 2.5rem;
   position: absolute;
-  left: 2.8rem;
-  bottom: 2.5rem; }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .gallery-lockup span {
+    margin: 0 0 1rem 0; }
+  .gallery-lockup .label-gallery {
+    font-size: 1.5rem; }
+
+.col-quarter:hover .gallery-icon, .col-half:hover .gallery-icon {
+  transform: scale(1.2); }
 
 .gallery .row1 {
   display: flex; }
@@ -168,12 +179,37 @@ li {
     background-image: url("../img/home-basecamp.jpg");
     background-size: cover;
     width: 25vw;
-    height: 26.25rem; }
+    height: 26.25rem;
+    position: relative; }
     .gallery .row1 .col-quarter:last-of-type {
       display: flex;
       background-image: url("../img/home-backpacking.jpg");
       background-size: cover;
       width: 25vw;
-      height: 26.25rem; }
+      height: 26.25rem;
+      position: relative; }
+.gallery .row2 {
+  display: flex; }
+  .gallery .row2 .col-quarter {
+    display: flex;
+    background-image: url("../img/home-photo.jpg");
+    background-size: cover;
+    width: 25vw;
+    height: 26.25rem;
+    position: relative; }
+    .gallery .row2 .col-quarter:first-of-type {
+      display: flex;
+      background-image: url("../img/home-canoe.jpg");
+      background-size: cover;
+      width: 25vw;
+      height: 26.25rem;
+      position: relative; }
+  .gallery .row2 .col-half {
+    display: flex;
+    background-image: url("../img/home-custom.jpg");
+    background-size: cover;
+    width: 50vw;
+    height: 26.25rem;
+    position: relative; }
 
 /*# sourceMappingURL=style.css.map */

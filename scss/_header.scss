@@ -11,6 +11,7 @@
   @extend .row-between;
   .nav-main ul {
     display: flex;
+
     color: white;
     @extend .din-uppercase;
     li {

@@ -13,6 +13,12 @@
 
 .wrapper {
   margin: 0 auto;
-  width: 66.75rem;
+  width: 67rem;
+  @media screen and (max-width: $break-large) {
+    width: 56rem;
+    .nav-main li a {
+      font-size: 1rem;
+    }
+  }
   // @extend .test-border;
 }

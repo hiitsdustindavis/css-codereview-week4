@@ -6,28 +6,40 @@
   height: 6rem;
   background-color: rgba(52, 52, 51, 0.75);
   border-radius: 100%;
+  transition: 200ms ease;
   img {
     height: 3rem;
   }
 }
 
 .gallery-lockup {
+  left: 2.8rem;
+  bottom: 2.5rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   span {
     @extend .label-stroke;
-    position: absolute;
-    left: 2.8rem;
-    bottom: 5.3rem;;
+    margin: 0 0 1rem 0;
   }
   .label-gallery {
     @extend .din-uppercase;
     font-size: 1.5rem;
-    position: absolute;
-    left: 2.8rem;
-    bottom: 2.5rem;;
   }
 }
 
+.col-quarter, .col-half {
+
+  &:hover {
+    .gallery-icon {
+      transform: scale(1.2);
+    }
+  }
+}
+// ••••• GALLERY - ROW ONE •••••
 .gallery {
+  // ••••• GALLERY - ROW ONE •••••
   .row1 {
     display: flex;
       .col-half {
@@ -44,6 +56,7 @@
         background-size:cover;
         width: 25vw;
         height: 26.25rem;
+        position: relative;
 
       &:last-of-type {
         display: flex;
@@ -51,7 +64,36 @@
         background-size:cover;
         width: 25vw;
         height: 26.25rem;
+        position: relative;
       }
     }
+  }
+  .row2 {
+    display: flex;
+    .col-quarter {
+      display: flex;
+      background-image: url("../img/home-photo.jpg");
+      background-size:cover;
+      width: 25vw;
+      height: 26.25rem;
+      position: relative;
+
+      &:first-of-type {
+        display: flex;
+        background-image: url("../img/home-canoe.jpg");
+        background-size:cover;
+        width: 25vw;
+        height: 26.25rem;
+        position: relative;
+      }
+    }
+      .col-half {
+        display: flex;
+        background-image: url("../img/home-custom.jpg");
+        background-size:cover;
+        width: 50vw;
+        height: 26.25rem;
+        position: relative;
+      }
   }
 }
