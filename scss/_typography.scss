@@ -3,6 +3,18 @@
     src: url("../font/DIN Condensed Bold.ttf");
 }
 
+@font-face {
+    font-family: "Open Sans";
+    src: url("../font/open-sans/OpenSans-Light.ttf");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Crimson Text";
+    src: url("../font/crimson/CrimsonText-Bold.ttf");
+}
+
 li {
     list-style: none;
   }
