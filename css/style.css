@@ -4,6 +4,13 @@
   letter-spacing: 0.13rem;
   font-size: 1.1rem; }
 
+.open-sans, .hero .nav-main ul li .drop-down-menu ul li {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 0.04rem;
+  text-transform: none;
+  font-size: 1rem; }
+
 .hover-orange:hover, .hero .nav-main ul li:hover {
   color: #DC7725; }
 
@@ -22,8 +29,14 @@
   width: 2.5rem;
   background-color: #DC7725; }
 
-.test-border {
+.test-border, .secondary-nav .bg-texture .container nav, .secondary-nav .bg-texture .container .search {
   border: 1px solid chartreuse; }
+
+@font-face {
+  font-family: "Din";
+  src: url("../font/DIN Condensed Bold.ttf"); }
+li {
+  list-style: none; }
 
 * {
   padding: 0;
@@ -74,12 +87,7 @@
         margin: 0 0 0 -0.8rem; }
         .hero .nav-main ul li .drop-down-menu ul li {
           margin: 0.15rem 0 0.5rem 0;
-          padding: 0.8rem 0.5rem 0.5rem 0.8rem;
-          font-family: 'Open Sans', sans-serif;
-          font-weight: lighter;
-          letter-spacing: 0.04rem;
-          text-transform: none;
-          font-size: 1rem; }
+          padding: 0.8rem 0.5rem 0.5rem 0.8rem; }
           .hero .nav-main ul li .drop-down-menu ul li a {
             color: grey; }
           .hero .nav-main ul li .drop-down-menu ul li:hover a {
@@ -133,11 +141,39 @@
     border-bottom: 13px solid transparent;
     transform: rotate(-90deg); }
 
-@font-face {
-  font-family: "Din";
-  src: url("../font/DIN Condensed Bold.ttf"); }
-li {
-  list-style: none; }
+.secondary-nav {
+  background-color: #343433;
+  background-image: url("../img/bg-categorynav.jpg");
+  background-repeat: repeat-x;
+  height: 8.75rem; }
+  .secondary-nav .bg-texture {
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5); }
+    .secondary-nav .bg-texture .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 5rem; }
+      .secondary-nav .bg-texture .container nav {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        font-weight: lighter;
+        letter-spacing: 0.04rem;
+        text-transform: none;
+        display: flex;
+        justify-content: space-between;
+        color: lightgray;
+        width: 28rem; }
+        .secondary-nav .bg-texture .container nav li span {
+          background-color: lightgray;
+          height: 2rem;
+          width: 0.1rem; }
+      .secondary-nav .bg-texture .container .search {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 0.04rem;
+        text-transform: none;
+        color: lightgray; }
 
 .gallery-icon {
   margin: 0 auto;

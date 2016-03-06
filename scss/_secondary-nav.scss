@@ -1,0 +1,35 @@
+.secondary-nav {
+  background-color: $color-dark-gray;
+  background-image: url("../img/bg-categorynav.jpg");
+  background-repeat: repeat-x;
+  height: 8.75rem;
+  .bg-texture {
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 5rem;
+
+      nav {
+        @include font-open-sans(1rem, lighter);
+        display: flex;
+        justify-content: space-between;
+        color: lightgray;
+        width: 28rem;
+        @extend .test-border;
+        li span {
+          background-color: lightgray;
+          height: 2rem;
+          width: 0.1rem;
+        }
+
+      }
+      .search {
+        @include font-open-sans(1rem, 400);
+        color: lightgray;
+        @extend .test-border;
+      }
+    }
+  }
+}

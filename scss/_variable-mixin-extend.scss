@@ -15,6 +15,14 @@
     font-size: $font-size-main;
   }
 
+  .open-sans {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.04rem;
+    text-transform: none;
+    font-size: 1rem;
+  }
+
   .hover-orange {
     &:hover {
       color: $color-orange;
@@ -43,3 +51,11 @@
     border: 1px solid chartreuse;
   }
 // MIXINS!
+
+@mixin font-open-sans ($font-size, $font-weight) {
+  font-family: 'Open Sans', sans-serif;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  letter-spacing: 0.04rem;
+  text-transform: none;
+}
