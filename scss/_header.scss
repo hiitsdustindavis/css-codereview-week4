@@ -36,7 +36,7 @@
         li {
           margin: 0.15rem 0 0.5rem 0;
           padding: 0.8rem 0.5rem 0.5rem 0.8rem;
-          @extend .open-sans;
+          @include font-open-sans(1rem, lighter);
           a {
             color: grey;
           }
@@ -70,7 +70,7 @@
   h1 {
     font-size: 7rem;
     letter-spacing: 0.2rem;
-    font-family: 'Crimson Text', serif; 
+    font-family: 'Crimson Text', serif;
   }
   hr {
     // margin: 1rem;

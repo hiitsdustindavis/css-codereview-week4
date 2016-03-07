@@ -4,7 +4,7 @@
   letter-spacing: 0.13rem;
   font-size: 1.1rem; }
 
-.open-sans, .hero .nav-main ul li .drop-down-menu ul li {
+.open-sans {
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
   letter-spacing: 0.04rem;
@@ -29,7 +29,7 @@
   width: 2.5rem;
   background-color: #DC7725; }
 
-.test-border, .secondary-nav .bg-texture .container nav, .secondary-nav .bg-texture .container .search {
+.test-border {
   border: 1px solid chartreuse; }
 
 @font-face {
@@ -39,6 +39,16 @@
   font-family: "Open Sans";
   src: url("../font/open-sans/OpenSans-Light.ttf");
   font-weight: lighter;
+  font-style: normal; }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../font/open-sans/OpenSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../font/open-sans/OpenSans-Bold.ttf");
+  font-weight: bold;
   font-style: normal; }
 @font-face {
   font-family: "Crimson Text";
@@ -95,7 +105,12 @@ li {
         margin: 0 0 0 -0.8rem; }
         .hero .nav-main ul li .drop-down-menu ul li {
           margin: 0.15rem 0 0.5rem 0;
-          padding: 0.8rem 0.5rem 0.5rem 0.8rem; }
+          padding: 0.8rem 0.5rem 0.5rem 0.8rem;
+          font-family: 'Open Sans', sans-serif;
+          font-size: 1rem;
+          font-weight: lighter;
+          letter-spacing: 0.04rem;
+          text-transform: none; }
           .hero .nav-main ul li .drop-down-menu ul li a {
             color: grey; }
           .hero .nav-main ul li .drop-down-menu ul li:hover a {
@@ -165,24 +180,40 @@ li {
       .secondary-nav .bg-texture .container nav {
         font-family: 'Open Sans', sans-serif;
         font-size: 1rem;
-        font-weight: lighter;
+        font-weight: normal;
         letter-spacing: 0.04rem;
         text-transform: none;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         color: lightgray;
-        width: 28rem; }
-        .secondary-nav .bg-texture .container nav li span {
-          background-color: lightgray;
-          height: 2rem;
-          width: 0.1rem; }
+        width: 27rem; }
+        .secondary-nav .bg-texture .container nav li {
+          color: lightgray; }
+          .secondary-nav .bg-texture .container nav li:nth-child(n+2):nth-child(-n+4) {
+            color: #a0a0a0; }
+          .secondary-nav .bg-texture .container nav li:last-child {
+            color: #DC7725; }
+            .secondary-nav .bg-texture .container nav li:last-child i {
+              color: #878787;
+              margin: 0 0 0 0.5rem; }
+          .secondary-nav .bg-texture .container nav li span {
+            display: block;
+            background-color: #545454;
+            height: 2.5rem;
+            width: 1px; }
       .secondary-nav .bg-texture .container .search {
         font-family: 'Open Sans', sans-serif;
-        font-size: 1rem;
-        font-weight: 400;
+        font-size: 1.1rem;
+        font-weight: bold;
         letter-spacing: 0.04rem;
-        text-transform: none;
-        color: lightgray; }
+        text-transform: none; }
+        .secondary-nav .bg-texture .container .search span {
+          color: #a0a0a0; }
+          .secondary-nav .bg-texture .container .search span i {
+            margin: 0 0 0 0.5rem;
+            font-size: 1.3rem;
+            color: #878787; }
 
 .gallery-icon {
   margin: 0 auto;

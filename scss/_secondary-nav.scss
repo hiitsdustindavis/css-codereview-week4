@@ -12,23 +12,46 @@
       height: 5rem;
 
       nav {
-        @include font-open-sans(1rem, lighter);
+        @include font-open-sans(1rem, normal);
         display: flex;
         justify-content: space-between;
+        align-items: center;
         color: lightgray;
-        width: 28rem;
-        @extend .test-border;
-        li span {
-          background-color: lightgray;
-          height: 2rem;
-          width: 0.1rem;
+        width: 27rem;
+        // @extend .test-border;
+        li {
+          color: lightgray;
+          &:nth-child(n+2):nth-child(-n+4) {
+            color: darken(lightgray, 20%);
+          }
+          &:last-child {
+            color: $color-orange;
+            & i {
+              color: darken(lightgray, 30%);
+              margin: 0 0 0 0.5rem;
+            }
+          }
+          span {
+            display: block;
+            background-color: darken(lightgray, 50%);
+            height: 2.5rem;
+            width: 1px;
+          }
         }
 
       }
       .search {
-        @include font-open-sans(1rem, 400);
-        color: lightgray;
-        @extend .test-border;
+        @include font-open-sans(1.1rem, bold);
+        span {
+          color: darken(lightgray, 20%);
+          i {
+            margin: 0 0 0 0.5rem;
+            font-size: 1.3rem;
+            color: darken(lightgray, 30%);
+          }
+        }
+
+        // @extend .test-border;
       }
     }
   }
